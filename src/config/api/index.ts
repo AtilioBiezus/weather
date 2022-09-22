@@ -1,9 +1,9 @@
 import axios from "axios";
 
 const weatherApi = axios.create({
-  baseURL: 'https://api.hgbrasil.com/weather',
+  baseURL: 'https://api.hgbrasil.com',
   params: {
-    apiKey: '3d74bb2e'
+    key: '3d74bb2e'
   }
 })
 

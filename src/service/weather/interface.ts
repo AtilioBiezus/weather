@@ -1,5 +1,5 @@
 export interface WeatherResult {
-    results: Weather[]
+    results: Weather
 }
 export interface Weather {
     temp: number,

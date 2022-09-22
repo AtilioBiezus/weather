@@ -1,17 +1,16 @@
 import React from "react"
 import { Text, View } from "react-native"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { WeatherItemProps } from "./interface"
+import { ForecastDto } from "../../../domain/dto/forecast"
 
-const ForecastItem = ({ item }: WeatherItemProps ) => {
+interface Props {
+    forecast: ForecastDto
+}
+
+const ForecastItem = ( props : Props) => {
+    const { forecast } = props;
     return (
         <View>
-            <Text>{item ? item.city : 'nada aqui'}</Text>
-            <Text>Terça feira</Text>
-            <Text>14/09</Text>
-            <Text>19°</Text>
-            <Text>24°</Text>
-            {/* <FontAwesomeIcon icon={faCloudSun} /> */}
+            <Text>{forecast.weekday}</Text>
         </View>
     )
 }

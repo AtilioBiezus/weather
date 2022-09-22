@@ -2,6 +2,6 @@ export interface ForecastDto {
 	weekday: string,
 	min: number,
 	max: number,
-	description: string,
+	date: string,
 	condition: string,
 }
