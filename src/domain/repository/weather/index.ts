@@ -14,6 +14,7 @@ export const getWeather = async (latitude: number, longitude: number): Promise<W
 			condition: forecast.condition,
 			max: forecast.max,
 			min: forecast.min,
+			date: forecast.date
 		})),
 		sunrise: result.sunrise,
 		temperature: result.temp,

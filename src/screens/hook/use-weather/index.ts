@@ -21,7 +21,7 @@ const useWeather = (latitude: number, longitude: number) => {
   }, [latitude, longitude])
 
   useEffect(() => {
-	loadWeather()
+	  loadWeather()
   }, [])
 
   return {
